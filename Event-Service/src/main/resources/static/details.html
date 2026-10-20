@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ApnaEvent | Event Details</title>
+
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/ra-assistant.css">
+  <meta name="description" content="ApnaEvent | Event Details on ApnaEvent. Discover and manage events, venues, bookings, and account information using the ApnaEvent platform.">
+  <meta property="og:title" content="ApnaEvent | Event Details | ApnaEvent">
+  <meta property="og:description" content="ApnaEvent | Event Details on ApnaEvent. Discover and manage events, venues, bookings, and account information using the ApnaEvent platform.">
+  <meta property="og:type" content="website">
+</head>
+
+<body>
+
+	<!-- Common ApnaEvent sidebar/header -->
+	<div id="appShell"></div>
+
+	<!-- Main content -->
+	<main class="main">
+
+		<!-- Page Header -->
+		<div class="page-top">
+
+			<div class="title">
+
+				<span class="eyebrow"> APNAEVENT </span>
+
+				<h1>Event Details</h1>
+
+				<p>Live event information from the Event Service database.</p>
+
+			</div>
+
+		</div>
+
+
+		<!-- Event Hero -->
+		<section class="detail-hero">
+
+			<div class="detail-hero-content">
+
+				<span id="eventStatus" class="badge green"> Loading </span>
+
+				<h1 id="eventName">Loading event...</h1>
+
+				<p id="eventMeta" class="muted">Please wait while we load the
+					event.</p>
+
+			</div>
+
+		</section>
+
+
+		<!-- Event Information -->
+		<section class="detail-grid">
+
+			<!-- Schedule / Venue -->
+			<div class="card">
+
+				<span class="eyebrow"> EVENT INFORMATION </span>
+
+				<h3>Schedule</h3>
+
+				<p id="eventSchedule">—</p>
+
+
+				<h3>Venue</h3>
+
+				<p id="eventVenue">—</p>
+
+			</div>
+
+
+			<!-- Availability -->
+			<div class="card">
+
+				<span class="eyebrow"> AVAILABILITY </span>
+
+				<div class="big-stat" id="eventSeats">—</div>
+
+				<p>Seats currently available</p>
+
+
+				<div class="actions">
+
+					<a id="bookLink" class="btn primary" href="/booking-ui/form.html">
+						Book This Event </a> <a class="btn ghost" href="/event-ui/list.html">
+						Back to Events </a>
+
+				</div>
+
+			</div>
+
+		</section>
+
+
+		<!-- Additional Event Information -->
+		<section class="detail-grid">
+
+			<div class="card">
+
+				<span class="eyebrow"> EVENT STATUS </span>
+
+				<h3>Current Status</h3>
+
+				<p id="eventStatusText">Loading...</p>
+
+			</div>
+
+
+			<div class="card">
+
+				<span class="eyebrow"> TICKETING </span>
+
+				<h3>Ticket Information</h3>
+
+				<p id="eventTicketInfo">Ticket availability is loaded directly
+					from the Event Service.</p>
+
+			</div>
+
+		</section>
+
+	</main>
+
+
+	<!-- ApnaEvent common scripts -->
+	<script src="assets/app.js"></script>
+
+	<script src="assets/app-shell.js"></script>
+
+	<script src="assets/detail.js"></script>
+
+	<script src="assets/ra-assistant.js"></script>
+
+</body>
+
+</html>

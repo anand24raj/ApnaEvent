@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>ApnaEvent | New Booking</title>
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/ra-assistant.css">
+  <meta name="description" content="ApnaEvent | New Booking on ApnaEvent. Discover and manage events, venues, bookings, and account information using the ApnaEvent platform.">
+  <meta property="og:title" content="ApnaEvent | New Booking | ApnaEvent">
+  <meta property="og:description" content="ApnaEvent | New Booking on ApnaEvent. Discover and manage events, venues, bookings, and account information using the ApnaEvent platform.">
+  <meta property="og:type" content="website">
+</head>
+
+<body>
+
+	
+
+	<div id="appShell"></div>
+<main class="main">>
+
+		<div class="page-top">
+
+			<div class="title">
+
+				<span class="eyebrow">BOOKING</span>
+
+				<h1>Create booking</h1>
+
+				<p>Reserve seats from the live Event Service and complete the
+					payment workflow.</p>
+
+			</div>
+
+			<a class="btn ghost" href="list.html"> View bookings </a>
+
+		</div>
+
+		<div class="booking-layout">
+
+			<section class="card booking-form-card">
+
+				<div class="section-heading">
+					<div>
+						<h2>Select your seats</h2>
+						<p>Availability is checked again when you save.</p>
+					</div>
+				</div>
+
+				<form class="form" id="recordForm">
+
+					<div class="field full">
+						<label for="customerId"> Customer </label> <select id="customerId"
+							required>
+							<option value="">Loading customers…</option>
+						</select>
+					</div>
+
+					<div class="field full">
+
+						<label for="eventId"> Event </label> <select id="eventId" required>
+							<option value="">Loading events…</option>
+						</select>
+
+						<div id="seatInfo" class="field-hint">
+							Choose an event to see current availability.</div>
+
+					</div>
+
+					<div class="field">
+
+						<label for="numberOfSeats"> Number of seats </label> <input
+							id="numberOfSeats" type="number" min="1" required>
+
+					</div>
+
+					<div class="field">
+
+						<label for="paymentMode"> Payment method </label> <select
+							id="paymentMode">
+
+							<option value="UPI">UPI</option>
+
+							<option value="CARD">Card</option>
+
+							<option value="NET_BANKING">Net Banking</option>
+
+							<option value="WALLET">Wallet</option>
+
+						</select>
+
+					</div>
+
+					<div class="booking-note full">
+
+						<div class="booking-note-icon">✓</div>
+
+						<div>
+							<strong>Live availability protection</strong>
+							<p>ApnaEvent checks the Event Service again at the moment of
+								reservation to prevent double-booking.</p>
+						</div>
+
+					</div>
+
+					<div class="full actions">
+
+						<button class="btn primary" id="saveButton" type="submit">
+							Confirm booking</button>
+
+						<a class="btn ghost" href="list.html">
+							Cancel </a>
+
+					</div>
+
+					<p id="formMessage" class="form-message"></p>
+
+				</form>
+
+			</section>
+
+			<aside class="card booking-side-card">
+
+				<span class="eyebrow"> BOOKING FLOW </span>
+
+				<h3>How it works</h3>
+
+				<div class="flow-step">
+					<span>01</span>
+					<div>
+						<strong>Choose customer</strong>
+						<p>Your account is used for this booking.</p>
+					</div>
+				</div>
+
+				<div class="flow-step">
+					<span>02</span>
+					<div>
+						<strong>Select event</strong>
+						<p>Only events with available seats are shown.</p>
+					</div>
+				</div>
+
+				<div class="flow-step">
+					<span>03</span>
+					<div>
+						<strong>Reserve seats</strong>
+						<p>Availability is checked again before confirmation.</p>
+					</div>
+				</div>
+
+				<div class="flow-step">
+					<span>04</span>
+					<div>
+						<strong>Complete payment</strong>
+						<p>Your booking becomes approved after payment.</p>
+					</div>
+				</div>
+
+			</aside>
+
+		</div>
+
+	</main>
+
+    
+    
+    
+    
+<script src="assets/app.js"></script>
+<script src="assets/app-shell.js"></script>
+<script src="assets/page.js"></script>
+<script src="assets/ra-assistant.js"></script>
+</body>
+</html>
+

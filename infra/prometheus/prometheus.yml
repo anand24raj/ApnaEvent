@@ -1,0 +1,38 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: api-gateway
+    metrics_path: /actuator/prometheus
+    static_configs:
+      - targets: ['localhost:8080']
+
+  - job_name: customer-service
+    metrics_path: /actuator/prometheus
+    static_configs:
+      - targets: ['localhost:1241']
+
+  - job_name: venue-service
+    metrics_path: /actuator/prometheus
+    static_configs:
+      - targets: ['localhost:1236']
+
+  - job_name: event-service
+    metrics_path: /actuator/prometheus
+    static_configs:
+      - targets: ['localhost:1235']
+
+  - job_name: booking-service
+    metrics_path: /actuator/prometheus
+    static_configs:
+      - targets: ['localhost:1237']
+
+  - job_name: paymnt-service
+    metrics_path: /actuator/prometheus
+    static_configs:
+      - targets: ['localhost:1239']
+
+  - job_name: notification-service
+    metrics_path: /actuator/prometheus
+    static_configs:
+      - targets: ['localhost:1240']

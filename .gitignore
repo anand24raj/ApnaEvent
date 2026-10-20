@@ -1,0 +1,48 @@
+﻿# =========================================================
+# ApnaEvent - Git Ignore
+# =========================================================
+
+# IDE / Eclipse / Workspace
+.metadata/
+.sonarlint/
+.idea/
+.vscode/
+*.iml
+.project
+.classpath
+.settings/
+**/.settings/
+
+# Maven / Java Build
+**/target/
+*.class
+*.jar
+
+# Environment / Secrets
+.env
+.env.*
+!.env.example
+
+application-local.properties
+application-local.yml
+application-local.yaml
+
+*.pem
+*.key
+*.p12
+*.jks
+
+# Logs / Runtime Output
+*.log
+logs/
+
+# Local UI Migration Backups
+_ui-migration-backup/
+_ui-migration-backup-*/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated Archives
+*.zip

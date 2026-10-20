@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Make payment</title><link rel="stylesheet" href="assets/style.css"><link rel="stylesheet" href="assets/ra-assistant.css"><link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <meta name="description" content="Make payment on ApnaEvent. Discover and manage events, venues, bookings, and account information using the ApnaEvent platform.">
+  <meta property="og:title" content="Make payment | ApnaEvent">
+  <meta property="og:description" content="Make payment on ApnaEvent. Discover and manage events, venues, bookings, and account information using the ApnaEvent platform.">
+  <meta property="og:type" content="website">
+</head><body>
+
+<div id="appShell"></div>
+<main class="main">>
+
+<div class="top"><div class="title"><h1>Make payment</h1><p>Record a payment against an existing booking.</p></div></div><div class="card"><form class="form" id="paymentForm"><div class="field"><label for="bookingId">Booking ID</label><input id="bookingId" type="number" min="1" required></div><div class="field"><label for="amount">Amount</label><input id="amount" type="number" min="0.01" step="0.01" required></div><div class="field"><label for="paymentMode">Payment mode</label><select id="paymentMode"><option>UPI</option><option>CARD</option><option>NET_BANKING</option><option>WALLET</option></select></div><div class="full"><button class="btn" type="submit">Save payment</button></div></form></div>
+
+</main>
+
+    
+    
+    
+    
+<script src="assets/app.js"></script>
+<script src="assets/app-shell.js"></script>
+<script src="assets/page.js"></script>
+<script src="assets/ra-assistant.js"></script>
+</body></html>
+

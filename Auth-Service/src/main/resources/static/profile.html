@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ApnaEvent | Profile</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/auth.css">
+<meta name="description"
+	content="ApnaEvent | Profile on ApnaEvent. Discover and manage events, venues, bookings, and account information using the ApnaEvent platform.">
+<meta property="og:title" content="ApnaEvent | Profile | ApnaEvent">
+<meta property="og:description"
+	content="ApnaEvent | Profile on ApnaEvent. Discover and manage events, venues, bookings, and account information using the ApnaEvent platform.">
+<meta property="og:type" content="website">
+</head>
+<body>
+	<div id="appShell"></div>
+	<main class="main auth-main">
+		<section class="auth-card">
+			<div class="auth-card-top">
+				<span class="auth-icon" id="profileInitial">A</span>
+				<div>
+					<span class="eyebrow">ACCOUNT</span>
+					<h2>Profile</h2>
+				</div>
+			</div>
+			<p class="auth-subtitle">Your authenticated ApnaEvent account.</p>
+			<div class="register-grid">
+				<div class="field">
+					<label>Username</label><input id="profileUsername" readonly>
+				</div>
+				<div class="field">
+					<label>Role</label><input id="profileRole" readonly>
+				</div>
+				<div class="field">
+					<label>Account status</label><input value="Active" readonly>
+				</div>
+			</div>
+			<div class="auth-links auth-links-center">
+				<a href="/">Back to ApnaEvent</a><a href="/auth-ui/login.html"
+					id="profileLogout">Sign out</a>
+			</div>
+		</section>
+	</main>
+	<script src="assets/app.js"></script>
+	<script src="assets/app-shell.js"></script>
+	<script src="assets/profile.js"></script>
+</body>
+</html>

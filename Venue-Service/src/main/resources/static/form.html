@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Add venue</title><link rel="stylesheet" href="assets/style.css"><link rel="stylesheet" href="assets/ra-assistant.css"><link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <meta name="description" content="Add venue on ApnaEvent. Discover and manage events, venues, bookings, and account information using the ApnaEvent platform.">
+  <meta property="og:title" content="Add venue | ApnaEvent">
+  <meta property="og:description" content="Add venue on ApnaEvent. Discover and manage events, venues, bookings, and account information using the ApnaEvent platform.">
+  <meta property="og:type" content="website">
+</head><body>
+
+<div id="appShell"></div>
+<main class="main">>
+
+<div class="top"><div class="title"><h1>Add venue</h1><p>Save this record to the live Venue Service database.</p></div></div><div class="card"><form class="form" id="recordForm"><div class="field"><label for="venueName">Venue name</label><input id="venueName" required></div><div class="field"><label for="city">City</label><input id="city" required></div><div class="field"><label for="capacity">Capacity</label><input id="capacity" type="number" min="1" required></div><div class="field"><label for="venueType">Venue type</label><select id="venueType"><option>HALL</option><option>AUDITORIUM</option><option>HOTEL</option><option>RESTAURANT</option></select></div><div class="field"><label for="facilities">Facilities</label><select id="facilities"><option>PARKING</option><option>WIFI</option><option>AC</option><option>SECURITY</option></select></div><div class="field"><label for="status">Status</label><select id="status"><option>ACTIVE</option><option>PENDING</option><option>COMPLETED</option></select></div><div class="full actions"><button class="btn" id="saveButton" type="submit">Save venue</button><a class="btn secondary" href="list.html">Cancel</a></div><p id="formMessage" class="muted"></p></form></div>
+
+</main>
+
+    
+    
+    
+    
+<script src="assets/app.js"></script>
+<script src="assets/app-shell.js"></script>
+<script src="assets/page.js"></script>
+<script src="assets/ra-assistant.js"></script>
+</body></html>
+

@@ -1,0 +1,41 @@
+name: Maven CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        service:
+          - Config-server
+          - EurekaServer
+          - Auth-Service
+          - Customer-Service
+          - Venue-Service
+          - Event-Service
+          - Paymnt-Service
+          - Booking-Service
+          - Notification-Service
+          - RA-AI-Service
+          - AdminServer
+          - ApiGateway
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+
+      - name: Build ${{ matrix.service }}
+        working-directory: ${{ matrix.service }}
+        run: mvn -B clean package

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ApnaEvent | Venue Details</title>
+
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/ra-assistant.css">
+  <meta name="description" content="ApnaEvent | Venue Details on ApnaEvent. Discover and manage events, venues, bookings, and account information using the ApnaEvent platform.">
+  <meta property="og:title" content="ApnaEvent | Venue Details | ApnaEvent">
+  <meta property="og:description" content="ApnaEvent | Venue Details on ApnaEvent. Discover and manage events, venues, bookings, and account information using the ApnaEvent platform.">
+  <meta property="og:type" content="website">
+</head>
+
+<body>
+
+	<!-- Common ApnaEvent application shell -->
+	<div id="appShell"></div>
+
+
+	<main class="main">
+
+		<!-- Page Header -->
+		<div class="page-top">
+
+			<div class="title">
+
+				<span class="eyebrow"> APNAEVENT </span>
+
+				<h1>Venue Details</h1>
+
+				<p>Live venue information from the Venue Service database.</p>
+
+			</div>
+
+		</div>
+
+
+		<!-- Venue Hero -->
+		<section class="detail-hero">
+
+			<div class="detail-hero-content">
+
+				<span id="venueStatus" class="badge green"> Loading </span>
+
+				<h1 id="venueName">Loading venue...</h1>
+
+				<p id="venueMeta" class="muted">Please wait while we load the
+					venue.</p>
+
+			</div>
+
+		</section>
+
+
+		<!-- Main Venue Information -->
+		<section class="detail-grid">
+
+
+			<!-- Capacity -->
+			<div class="card">
+
+				<span class="eyebrow"> VENUE CAPACITY </span>
+
+				<h3>Maximum Capacity</h3>
+
+				<div class="big-stat" id="venueCapacity">—</div>
+
+				<p>Maximum guests supported by this venue.</p>
+
+			</div>
+
+
+			<!-- Facilities -->
+			<div class="card">
+
+				<span class="eyebrow"> FACILITIES </span>
+
+				<h3>Available Facilities</h3>
+
+				<p id="venueFacilities">Loading facilities...</p>
+
+				<div class="actions">
+
+					<a class="btn ghost" href="/venue-ui/list.html"> Back to Venues
+					</a>
+
+				</div>
+
+			</div>
+
+		</section>
+
+
+		<!-- Additional Venue Information -->
+		<section class="detail-grid">
+
+
+			<!-- Location -->
+			<div class="card">
+
+				<span class="eyebrow"> LOCATION </span>
+
+				<h3>City</h3>
+
+				<p id="venueCity">—</p>
+
+			</div>
+
+
+			<!-- Venue Type -->
+			<div class="card">
+
+				<span class="eyebrow"> VENUE TYPE </span>
+
+				<h3>Type</h3>
+
+				<p id="venueType">—</p>
+
+			</div>
+
+		</section>
+
+
+		<!-- Venue Status -->
+		<section class="detail-grid">
+
+			<div class="card">
+
+				<span class="eyebrow"> VENUE STATUS </span>
+
+				<h3>Current Status</h3>
+
+				<p id="venueStatusText">Loading...</p>
+
+			</div>
+
+
+			<div class="card">
+
+				<span class="eyebrow"> APNAEVENT </span>
+
+				<h3>Event-ready venue</h3>
+
+				<p>Venue information is loaded directly from the live Venue
+					Service.</p>
+
+			</div>
+
+		</section>
+
+	</main>
+
+
+	<!-- ApnaEvent scripts -->
+	<script src="assets/app.js"></script>
+
+	<script src="assets/app-shell.js"></script>
+
+	<script src="assets/detail.js"></script>
+
+	<script src="assets/ra-assistant.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description"
+	content="ApnaEvent — discover events, venues and manage bookings in one workspace.">
+<title>ApnaEvent | Event & Venue Management</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/ra-assistant.css">
+<meta property="og:title"
+	content="ApnaEvent | Event &amp; Venue Management | ApnaEvent">
+<meta property="og:description"
+	content="ApnaEvent | Event &amp; Venue Management on ApnaEvent. Discover and manage events, venues, bookings, and account information using the ApnaEvent platform.">
+<meta property="og:type" content="website">
+</head>
+<body>
+	<div class="site-shell">
+		<div id="appShell"></div>
+		<main>
+			<section class="hero">
+				<div class="hero-copy">
+					<div class="eyebrow">
+						<span class="pulse"></span> LIVE PLATFORM · REAL PROJECT DATA
+					</div>
+					<h1>
+						Plan the event.<br> <span>Own the experience.</span>
+					</h1>
+					<p>Discover events, explore venues, reserve seats and manage
+						payments through one connected ApnaEvent workspace.</p>
+					<div class="hero-actions">
+						<a class="btn primary large" href="/event-ui/list.html">Explore
+							events <span>→</span>
+						</a><a class="btn glass large" href="/venue-ui/list.html">Browse
+							venues</a>
+					</div>
+					<div class="hero-meta">
+						<span>✓ Live availability</span><span>✓ MySQL-backed
+							records</span><span>✓ Secure service gateway</span>
+					</div>
+				</div>
+				<div class="hero-visual">
+					<div class="orb orb-one"></div>
+					<div class="orb orb-two"></div>
+					<div class="event-preview">
+						<div class="preview-top">
+							<span class="mini-badge">UPCOMING</span><span>ApnaEvent</span>
+						</div>
+						<div class="preview-date">
+							23 <small>OCT</small>
+						</div>
+						<h3 id="hero-event-name">Discover your next experience</h3>
+						<p id="hero-event-meta">Live events · live seats · live
+							pricing</p>
+						<div class="preview-bottom">
+							<span id="hero-event-seats">Loading availability…</span><a
+								href="/event-ui/list.html">View →</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="stats-strip">
+				<div>
+					<strong id="events">—</strong><span>Live events</span>
+				</div>
+				<div>
+					<strong id="venues">—</strong><span>Active venues</span>
+				</div>
+				<div>
+					<strong id="customers">—</strong><span>Customers</span>
+				</div>
+				<div>
+					<strong id="bookings">—</strong><span>Bookings</span>
+				</div>
+			</section>
+			<section class="section">
+				<div class="section-heading">
+					<div>
+						<span class="eyebrow">DISCOVER</span>
+						<h2>Events worth showing up for</h2>
+						<p>Real records from your Event Service — not sample content.</p>
+					</div>
+					<a class="text-link" href="/event-ui/list.html">View all events
+						→</a>
+				</div>
+				<div class="card-grid" id="event-cards">
+					<div class="skeleton-card"></div>
+					<div class="skeleton-card"></div>
+				</div>
+			</section>
+			<section class="section soft-section">
+				<div class="section-heading">
+					<div>
+						<span class="eyebrow">VENUES</span>
+						<h2>Spaces made for your plans</h2>
+						<p>Find the right place by city, capacity and venue type.</p>
+					</div>
+					<a class="text-link" href="/venue-ui/list.html">Explore venues
+						→</a>
+				</div>
+				<div class="venue-grid" id="venue-cards">
+					<div class="skeleton-card"></div>
+					<div class="skeleton-card"></div>
+				</div>
+			</section>
+			<section class="workflow">
+				<div>
+					<span class="eyebrow">HOW APNAEVENT WORKS</span>
+					<h2>One flow from discovery to confirmation.</h2>
+					<p>Built as a connected Spring Boot microservice platform, with
+						the gateway coordinating each business capability.</p>
+				</div>
+				<div class="steps">
+					<div>
+						<b>01</b>
+						<h3>Discover</h3>
+						<p>Browse public events and venues without creating an
+							account.</p>
+					</div>
+					<div>
+						<b>02</b>
+						<h3>Reserve</h3>
+						<p>Select a customer, event and seats with availability
+							checked at booking time.</p>
+					</div>
+					<div>
+						<b>03</b>
+						<h3>Pay</h3>
+						<p>Choose UPI, card, net banking or wallet and track the
+							payment state.</p>
+					</div>
+					<div>
+						<b>04</b>
+						<h3>Manage</h3>
+						<p>Use dashboards, records and RA to operate the live
+							platform.</p>
+					</div>
+				</div>
+			</section>
+			<section class="capabilities">
+				<div>
+					<span class="eyebrow">BUILT FOR REAL OPERATIONS</span>
+					<h2>More than a CRUD dashboard.</h2>
+				</div>
+				<div class="cap-grid">
+					<article>
+						<span>01</span>
+						<h3>Double-booking protection</h3>
+						<p>Seat availability is checked again when a booking is
+							submitted.</p>
+					</article>
+					<article>
+						<span>02</span>
+						<h3>Connected services</h3>
+						<p>Customers, events, venues, bookings, payments and
+							notifications work through the gateway.</p>
+					</article>
+					<article>
+						<span>03</span>
+						<h3>RA project assistant</h3>
+						<p>Ask about current project records without sending data to
+							an external AI source.</p>
+					</article>
+					<article>
+						<span>04</span>
+						<h3>Observability ready</h3>
+						<p>Eureka, Spring Boot Admin, Actuator and Prometheus
+							endpoints are part of the platform.</p>
+					</article>
+				</div>
+			</section>
+		</main>
+		<footer class="site-footer">
+			<div>
+				<strong>ApnaEvent</strong><span>Smart Event & Venue
+					Management Platform</span>
+			</div>
+			<div class="footer-links">
+				<a href="/contact.html">Contact Us</a><a
+					href="mailto:anandraj24092002@gmail.com">anandraj24092002@gmail.com</a><a
+					href="https://github.com/anand24raj" target="_blank" rel="noopener">GitHub</a><a
+					href="https://linkedin.com/in/anandraj24/" target="_blank"
+					rel="noopener">LinkedIn</a><a
+					href="https://anandraj-porfolio.netlify.app/" target="_blank"
+					rel="noopener">Portfolio</a>
+			</div>
+			<small>© <span id="copyright-year">2026</span> ApnaEvent ·
+				Built by Anand Raj
+			</small>
+		</footer>
+	</div>
+	<script src="assets/app.js"></script>
+	<script src="assets/dashboard.js"></script>
+	<script src="assets/ra-assistant.js"></script>
+</body>
+</html>

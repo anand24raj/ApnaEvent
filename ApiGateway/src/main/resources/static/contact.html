@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact ApnaEvent for help with events, bookings, venues, or your account.">
+  <meta name="theme-color" content="#6d28d9">
+  <title>Contact Us | ApnaEvent</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/assets/ra-assistant.css">
+  <style>
+    .contact-main{max-width:1120px;margin:0 auto;padding:clamp(28px,6vw,76px) 20px}
+    .contact-hero{max-width:720px;margin:0 auto 28px;text-align:center}
+    .contact-hero h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.08;margin:12px 0}
+    .contact-hero p{color:#667085;line-height:1.7}
+    .contact-layout{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:24px;align-items:start}
+    .contact-info,.contact-form-card{background:#fff;border:1px solid #e8e4ef;border-radius:22px;padding:clamp(18px,3vw,30px);box-shadow:0 12px 40px rgba(35,18,55,.06);min-width:0}
+    .contact-info h2,.contact-form-card h2{margin-top:0}
+    .contact-info p{color:#667085;line-height:1.7}
+    .contact-note{margin-top:22px;padding:15px;border-radius:14px;background:#f7f2ff;color:#4c1d95;font-size:.9rem;line-height:1.6}
+    .contact-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .contact-field{display:grid;gap:7px;min-width:0}
+    .contact-field.full{grid-column:1/-1}
+    .contact-field label{font-weight:650;font-size:.92rem}
+    .contact-field input,.contact-field select,.contact-field textarea{width:100%;min-width:0;border:1px solid #d7d2e2;border-radius:11px;padding:12px 13px;background:#fff;color:#171526;font:inherit}
+    .contact-field textarea{min-height:150px;resize:vertical}
+    .contact-field input:focus-visible,.contact-field select:focus-visible,.contact-field textarea:focus-visible{outline:3px solid #c4b5fd;outline-offset:2px;border-color:#7c3aed}
+    .contact-submit{margin-top:18px;width:100%;border:0;border-radius:12px;padding:14px 18px;background:#6d28d9;color:#fff;font:inherit;font-weight:750;cursor:pointer}
+    .contact-submit:disabled{opacity:.65;cursor:wait}
+    .contact-status{margin-top:14px;padding:12px;border-radius:10px;line-height:1.5}
+    .contact-status[hidden]{display:none}
+    .contact-status.success{background:#ecfdf3;color:#166534}
+    .contact-status.error{background:#fff1f2;color:#9f1239}
+    .contact-back{display:inline-flex;margin-bottom:22px;text-decoration:none;font-weight:700;color:#6d28d9}
+    @media(max-width:760px){.contact-layout{grid-template-columns:1fr}.contact-main{padding:28px 14px}.contact-fields{grid-template-columns:1fr}.contact-field.full{grid-column:auto}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+  <meta property="og:title" content="Contact Us | ApnaEvent | ApnaEvent">
+  <meta property="og:description" content="Contact Us | ApnaEvent on ApnaEvent. Discover and manage events, venues, bookings, and account information using the ApnaEvent platform.">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand-mark" href="/" aria-label="ApnaEvent home"><span class="brand-icon">A</span><span>Apna<strong>Event</strong></span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="/">Overview</a><a href="/event-ui/list.html">Events</a><a href="/venue-ui/list.html">Venues</a>
+      </nav>
+      <div class="header-actions"><a class="btn ghost" href="/auth-ui/login.html">Sign in</a><a class="btn primary" href="/auth-ui/register.html">Get started</a></div>
+    </header>
+    <main class="contact-main">
+      <a class="contact-back" href="/">← Back to ApnaEvent</a>
+      <section class="contact-hero">
+        <span class="eyebrow">WE'RE HERE TO HELP</span>
+        <h1>Let's talk about your event.</h1>
+        <p>Send an enquiry about events, venues, bookings, or your ApnaEvent account. Your message is submitted only when the configured email service accepts it.</p>
+      </section>
+      <div class="contact-layout">
+        <aside class="contact-info">
+          <h2>How can we help?</h2>
+          <p>Share enough detail for the team to understand your question. Please do not include passwords, payment card details, or other sensitive information.</p>
+          <div class="contact-note">A success message means the configured email service accepted the enquiry. It does not guarantee that the email reached the recipient's inbox.</div>
+        </aside>
+        <section class="contact-form-card" aria-labelledby="contact-form-title">
+          <h2 id="contact-form-title">Send an enquiry</h2>
+          <form id="contact-form" novalidate>
+            <div class="contact-fields">
+              <div class="contact-field"><label for="fullName">Full name *</label><input id="fullName" name="fullName" autocomplete="name" minlength="2" maxlength="100" required></div>
+              <div class="contact-field"><label for="email">Email address *</label><input id="email" name="email" type="email" autocomplete="email" maxlength="254" required></div>
+              <div class="contact-field"><label for="phone">Phone (optional)</label><input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="25"></div>
+              <div class="contact-field"><label for="category">Enquiry category *</label><select id="category" name="category" required><option value="">Choose a category</option><option>Events</option><option>Venues</option><option>Booking</option><option>Payment</option><option>Account support</option><option>Organizer support</option><option>Other</option></select></div>
+              <div class="contact-field full"><label for="subject">Subject *</label><input id="subject" name="subject" minlength="3" maxlength="120" required></div>
+              <div class="contact-field full"><label for="message">Message *</label><textarea id="message" name="message" minlength="10" maxlength="3000" required></textarea></div>
+            </div>
+            <button class="contact-submit" id="contact-submit" type="submit">Send enquiry</button>
+            <div id="contact-status" class="contact-status" role="status" aria-live="polite" hidden></div>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer"><div><strong>ApnaEvent</strong><span>Smart Event &amp; Venue Management Platform</span></div><div class="footer-links"><a href="/">Home</a><a href="/event-ui/list.html">Events</a><a href="/auth-ui/login.html">Sign in</a><a href="mailto:anandraj24092002@gmail.com">Email</a><a href="https://github.com/anand24raj" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://linkedin.com/in/anandraj24/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://anandraj-porfolio.netlify.app/" target="_blank" rel="noopener noreferrer">Portfolio</a></div><small>© <span id="copyright-year"></span> ApnaEvent</small></footer>
+  </div>
+  <script src="/assets/ra-assistant.js"></script>
+  <script>
+    (() => {
+      const form = document.getElementById('contact-form');
+      const button = document.getElementById('contact-submit');
+      const status = document.getElementById('contact-status');
+      document.getElementById('copyright-year').textContent = new Date().getFullYear();
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        status.hidden = true;
+        if (!form.reportValidity()) return;
+        const data = Object.fromEntries(new FormData(form).entries());
+        button.disabled = true;
+        button.textContent = 'Sending…';
+        try {
+          const response = await fetch('/contact/submit', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify(data)
+          });
+          const result = await response.json().catch(() => ({}));
+          status.textContent = result.message || (response.ok ? 'Enquiry submitted.' : 'The enquiry could not be submitted.');
+          status.className = `contact-status ${response.ok && result.success ? 'success' : 'error'}`;
+          status.hidden = false;
+          if (response.ok && result.success) form.reset();
+        } catch (_) {
+          status.textContent = 'Could not reach the contact service. Please try again later.';
+          status.className = 'contact-status error';
+          status.hidden = false;
+        } finally {
+          button.disabled = false;
+          button.textContent = 'Send enquiry';
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Login | ApnaEvent</title>
+
+<link rel="icon" href="assets/favicon.svg">
+
+<link rel="stylesheet" href="assets/app.css">
+
+<style>
+body.auth {
+	min-height: 100vh;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 24px;
+	box-sizing: border-box;
+}
+
+.login-wrapper {
+	width: 100%;
+	max-width: 440px;
+}
+
+.login-card {
+	background: #fff;
+	border: 1px solid #e5e7eb;
+	border-radius: 18px;
+	padding: 36px;
+	box-shadow: 0 20px 60px rgba(0, 0, 0, .08);
+}
+
+.login-brand {
+	text-align: center;
+	margin-bottom: 28px;
+}
+
+.login-brand a {
+	text-decoration: none;
+	font-size: 30px;
+	font-weight: 800;
+}
+
+.login-brand span {
+	font-weight: 800;
+}
+
+.login-title {
+	text-align: center;
+	margin: 0;
+	font-size: 28px;
+}
+
+.login-subtitle {
+	text-align: center;
+	margin: 10px 0 28px;
+}
+
+.login-form {
+	display: grid;
+	gap: 18px;
+}
+
+.login-form .field {
+	display: grid;
+	gap: 7px;
+}
+
+.login-form label {
+	font-weight: 600;
+}
+
+.login-form input {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 13px 14px;
+	border: 1px solid #d1d5db;
+	border-radius: 10px;
+	font: inherit;
+}
+
+.login-form input:focus {
+	outline: none;
+	border-color: #6366f1;
+	box-shadow: 0 0 0 3px rgba(99, 102, 241, .12);
+}
+
+.login-button {
+	width: 100%;
+	margin-top: 4px;
+}
+
+.login-links {
+	display: flex;
+	justify-content: space-between;
+	gap: 12px;
+	margin-top: 22px;
+	font-size: 14px;
+}
+
+.login-message {
+	display: none;
+	padding: 12px 14px;
+	border-radius: 10px;
+	margin-bottom: 16px;
+}
+
+.login-message.show {
+	display: block;
+}
+
+@media ( max-width : 520px) {
+	.login-card {
+		padding: 26px 20px;
+	}
+	.login-links {
+		flex-direction: column;
+		text-align: center;
+	}
+}
+</style>
+<meta name="description"
+	content="Login | ApnaEvent on ApnaEvent. Discover and manage events, venues, bookings, and account information using the ApnaEvent platform.">
+<meta property="og:title" content="Login | ApnaEvent | ApnaEvent">
+<meta property="og:description"
+	content="Login | ApnaEvent on ApnaEvent. Discover and manage events, venues, bookings, and account information using the ApnaEvent platform.">
+<meta property="og:type" content="website">
+</head>
+
+<body class="auth">
+	<div id="appShell"></div>
+
+	<div class="login-wrapper">
+
+		<section class="login-card">
+
+			<div class="login-brand">
+				<a href="/"> Apna<span>Event</span>
+				</a>
+			</div>
+
+			<h1 class="login-title">Welcome back</h1>
+
+			<p class="muted login-subtitle">Sign in to continue to your
+				ApnaEvent account.</p>
+
+			<div id="loginMessage" class="login-message"></div>
+
+			<form id="loginForm" class="login-form">
+
+				<div class="field">
+
+					<label for="username"> Username </label> <input id="username"
+						name="username" type="text" autocomplete="username"
+						placeholder="Enter your username" required>
+
+				</div>
+
+				<div class="field">
+
+					<label for="password"> Password </label> <input id="password"
+						name="password" type="password" autocomplete="current-password"
+						placeholder="Enter your password" required>
+
+				</div>
+
+				<button id="loginButton" type="submit" class="btn login-button">
+
+					Sign in</button>
+
+			</form>
+
+			<div class="login-links">
+
+				<a href="register.html"> Create account </a> <a
+					href="forgot-password.html"> Forgot password? </a>
+
+			</div>
+
+		</section>
+
+	</div>
+
+	<script src="assets/app.js"></script>
+	<script src="assets/app-shell.js"></script>
+	<script src="assets/login.js"></script>
+
+</body>
+</html>

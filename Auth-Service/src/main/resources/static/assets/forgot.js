@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{const f=document.getElementById("forgotForm");if(f)f.addEventListener("submit",e=>{e.preventDefault();toast("Password reset requests are handled by the project administrator.")})});
