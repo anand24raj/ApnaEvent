@@ -145,7 +145,7 @@ Start Config-server after setting those variables. Keep secrets out of the confi
 
 ## GitHub workflow
 
-The repository contains `.github/workflows/ci.yml`. Every push/PR runs `mvn -B clean package` for all 12 Maven services, including their configured automated tests. Full end-to-end flows still require MySQL, Kafka, Eureka, Config Server, and any configured SMTP credentials.
+The repository contains `.github/workflows/ci.yml`. Every push/PR runs `mvn -B --no-transfer-progress clean verify` for all 12 Maven services, with a disposable MySQL 8.4 service and CI-only database/JWT/admin environment variables. This runs the tests included in each service. Full end-to-end flows still require coordinated MySQL, Kafka, Eureka, Config Server, and any configured SMTP credentials.
 
 For a source change:
 
